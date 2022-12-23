@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <section id="contato">
+    <div class="container">
+        <h2>Entre em contato</h2>
+        <br></br>
+        <form>
+            <div class="form-campo">
+                <label for="nome">Nome completo</label>
+                <input type="text" placeholder="Apenas letras" required>
+            </div>
+            <div class="form-campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" minlength="8" maxlength="11" required>
+            </div>
+            <div class="form-campo">
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="email" placeholder="example@example.com" required>
+            </div>
+            <div class="form-campo">
+                <label for="cpf">CPF</label>
+                <input type="text" id="input" placeholder="000.000.000-00" required/><span id="resposta"></span>
+            </div>
+            <div class="form-campo">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Rua exemplo, 123" required>
+            </div>
+            <div class="form-campo">
+                <label for="cep">CEP</label>
+                <input name="cep" id="cep" required minlength="8" maxlength="8">
+            </div>
+            <div class="form-campo">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Até 120 caracteres" maxlength="120" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
